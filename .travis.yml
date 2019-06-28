@@ -15,9 +15,9 @@ script:
   - retire 
   - twly
 
-
-deploy:
-    provider: heroku
-    api_key:
-      secure:
-    app: ipssi-evaluation-nm
+# pas eu le temps d'installer ruby et co pour pouvoir run la command "travis encrypt $(heroku auth:token) --add deploy.api_key" pour obtenir la clé
+#deploy:
+#    provider: heroku
+#    api_key:
+#      secure: clé obtenu avec travis encrypt $(heroku auth:token) --add deploy.api_key
+#    app: ipssi-evaluation-nm

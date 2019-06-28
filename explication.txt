@@ -1,0 +1,5 @@
+Sur Git sur la branch master, dans setting aller a l'onglet "branches".
+Cocher "Require status checks to pass before merging"
+Cocher les status check de Travis
+Donner nom a la règle
+Create
