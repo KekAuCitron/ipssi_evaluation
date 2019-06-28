@@ -6,8 +6,5 @@ cache:
         - "$HOME/.composer/cache"
 
 install:
-    - composer install
 
 script:
-    - "./vendor/bin/php-cs-fixer fix --dry-run  --diff --verbose"
-    - phpunit tests
