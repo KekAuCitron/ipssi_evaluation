@@ -6,7 +6,9 @@ cache:
         - "$HOME/.composer/cache"
 
 install:
-  - npm install -g jshint
+  - npm install
 
 script:
   - jshint ./
+  - retire 
+  - twly
