@@ -6,6 +6,7 @@ cache:
         - "$HOME/.composer/cache"
 
 install:
+  - npm install
   - npm install -g retire
   - npm install -g jshint
   - npm install -g twly
@@ -14,3 +15,10 @@ script:
   - jshint ./
   - retire 
   - twly
+
+
+deploy:
+    provider: heroku
+    api_key:
+      secure:
+    app: ipssi-evaluation-nm
