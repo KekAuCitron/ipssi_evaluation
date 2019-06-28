@@ -6,6 +6,7 @@ cache:
         - "$HOME/.composer/cache"
 
 install:
+  - npm install -g jshint
 
 script:
   - jshint ./
